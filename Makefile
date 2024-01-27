@@ -13,3 +13,11 @@ format:
 lint:
 	poetry run flake8 ${SOURCE_DIRECTORIES}
 	poetry run mypy ${SOURCE_DIRECTORIES}
+
+.PHONY: docs
+docs:
+	poetry run mkdocs serve --dev-addr=0.0.0.0:9000
+
+.PHONY: test
+test:
+	poetry run pytest tests

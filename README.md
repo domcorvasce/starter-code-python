@@ -9,4 +9,5 @@ docker compose run workspace bash
 ## How to use
 
 * Customize `LICENSE`
+* Customize `mkdocs.yml`
 * Customize `pyproject.toml`

@@ -1,5 +1,8 @@
 services:
   workspace:
     build: .
+    ports:
+      - 9000:9000
+    entrypoint: ./entrypoint
     volumes:
       - .:/code
